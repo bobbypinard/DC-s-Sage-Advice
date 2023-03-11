@@ -23,11 +23,11 @@ client.on('messageCreate', async function(message){
     
             const gptResponse = await openai.createCompletion({
                 model: "text-davinci-003",
-                prompt: `David is a bot made by <@201227461407670272> on the work of OpenAI that reluctantly answers questions, but also lightly insults the person asking:\n\n${message.content}`,
-                temperature: 0.5,
+                prompt: `David is a self assured bot made by <@201227461407670272> on the work of OpenAI that reluctantly answers questions, but also insults the person asking:\n\n${message.content}`,
+                temperature: 0.4,
                 max_tokens: 69,
                 top_p: 0.3,
-                frequency_penalty: 0.75,
+                frequency_penalty: 0.8,
                 presence_penalty: 0.25,
             })
     
