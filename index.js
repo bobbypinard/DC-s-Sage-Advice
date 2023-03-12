@@ -27,8 +27,8 @@ client.on('messageCreate', async function(message){
                 temperature: 0.4,
                 max_tokens: 69,
                 top_p: 0.3,
-                frequency_penalty: 0.8,
-                presence_penalty: 0.25,
+                frequency_penalty: 0.3,
+                presence_penalty: 0.1,
             })
     
             console.log(message.content);
