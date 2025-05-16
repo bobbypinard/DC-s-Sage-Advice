@@ -8,3 +8,25 @@
 - Increased presence penalty
 -- Added modularity in the code base
 -- Added logging for research purposes
+
+## Usage
+Create a .env file with your Discord API, and OpenAI API keys.
+```
+DISCORD_TOKEN=""
+OPENAI_API_KEY=""
+```
+
+Source the virtual environment with uv
+```
+source .venv/bin/activate
+```
+
+Install all the requirements with uv
+```
+uv pip install -r requirements.txt
+```
+
+Start the server
+```
+python bot.py
+```
